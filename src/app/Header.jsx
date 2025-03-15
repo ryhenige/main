@@ -30,11 +30,11 @@ const StyledLink = styled(NavLink)`
 `
 
 export default function Header() {
-
   return (
     <NavBar>
       <StyledLink to="/" end>Home</StyledLink>
       <StyledLink to="/about">About</StyledLink>
+      <StyledLink to="/chat">Chat</StyledLink>
     </NavBar>
   )
 }
