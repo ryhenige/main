@@ -3,7 +3,7 @@ import useWebSocket from "react-use-websocket";
 
 const SERVER_URL = window.location.hostname.includes("localhost")
   ? "ws://localhost:3000"
-  : "wss://your-production-server.com";
+  : "wss://main-server-patient-fog-562.fly.dev";
 
 export function useWebSocketChannel() {
   const [messages, setMessages] = useState([]);

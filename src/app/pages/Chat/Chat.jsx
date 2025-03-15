@@ -23,9 +23,6 @@ export default function Chat() {
       const chatBox = chatBoxRef.current
       const isScrolledToBottom = chatBox.scrollHeight - chatBox.clientHeight - chatBox.scrollTop < 100
 
-      console.log("chatBox.scrollHeight - chatBox.clientHeight", chatBox.scrollHeight - chatBox.clientHeight - chatBox.scrollTop)
-      console.log("chatBox.scrollTop", chatBox.scrollTop)
-      console.log("isScrolledToBottom", isScrolledToBottom)
       if (isScrolledToBottom) {
         chatBox.scrollTop = chatBox.scrollHeight
       }
