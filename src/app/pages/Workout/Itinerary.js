@@ -1,22 +1,22 @@
-const Routine = {
+const Itinerary = {
   Monday: [
     {
       sequence: 0,
       name: 'Pull-ups',
       sets: 3,
-      reps: ['Max'],
+      reps: ['Until Failure'],
       rest: 60
     },
     {
       sequence: 1,
-      name: 'Dumbell Bench Press',
+      name: 'Dumbbell Bench Press',
       sets: 3,
       reps: [8, 12],
       rest: 60
     },
     {
       sequence: 2,
-      name: 'Dumbell Rows',
+      name: 'Dumbbell Rows',
       sets: 3,
       reps: [8, 12],
       rep_quantifier: 'per arm',
@@ -24,7 +24,7 @@ const Routine = {
     },
     {
       sequence: 3,
-      name: 'Dumbell Shoulder Press',
+      name: 'Dumbbell Shoulder Press',
       sets: 3,
       reps: [8, 12],
       rest: 60
@@ -33,14 +33,14 @@ const Routine = {
   Tuesday: [
     {
       sequence: 0,
-      name: 'Dumbell Squats',
+      name: 'Dumbbell Squats',
       sets: 3,
       reps: [12, 15],
       rest: 60
     },
     {
       sequence: 1,
-      name: 'Dumbell Lunges',
+      name: 'Dumbbell Lunges',
       sets: 3,
       reps: [10, 12],
       rep_quantifier: 'per leg',
@@ -48,7 +48,7 @@ const Routine = {
     },
     {
       sequence: 2,
-      name: 'Dumbell Deadlifts',
+      name: 'Dumbbell Deadlifts',
       sets: 3,
       reps: [10, 12],
       rest: 60
@@ -65,14 +65,14 @@ const Routine = {
   Wednesday: [
     {
       sequence: 0,
-      name: 'Dumbell Bicep Curls',
+      name: 'Dumbbell Bicep Curls',
       sets: 3,
       reps: [10, 12],
       rest: 60
     },
     {
       sequence: 1,
-      name: 'Dumbell Tricep Extensions',
+      name: 'Dumbbell Tricep Extensions',
       sets: 3,
       reps: [10, 12],
       rest: 60
@@ -81,12 +81,12 @@ const Routine = {
       sequence: 2,
       name: 'Dips',
       sets: 3,
-      reps: ['Max'],
+      reps: ['Until Failure'],
       rest: 60
     },
     {
       sequence: 3,
-      name: 'Dumbell Lateral Raises',
+      name: 'Dumbbell Lateral Raises',
       sets: 3,
       reps: [12, 15],
       rest: 60
@@ -176,4 +176,4 @@ const Routine = {
   ]
 }
 
-export default Routine
+export default Itinerary

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 // room page
 export const WeekSpinner = styled.div`
@@ -17,8 +17,9 @@ export const WeekDay = styled.div`
   text-align: center;
   font-weight: bold;
   font-size: 32px;
-  color: #6495ED;
   width: 120px;
+  background-color: lightgray;
+  border-radius: 5px;
 `
 
 export const Arrows = styled.div`
@@ -29,10 +30,73 @@ export const Arrows = styled.div`
   cursor: pointer;
   width: 25px;
   height: 25px;
-  border-radius: 50px;
-  transition: background-color 200ms ease;
+  background-color: #89CFF0;
+  ${props => props.align === 'right' && `border-radius: 5px 0 0 5px;`}
+  ${props => props.align === 'left' && `border-radius: 0 5px 5px 0;`}
 
-  &:hover, &:focus {
-    background-color: lightgray;
+  &:hover {
+    opacity: 0.8;
   }
+`
+
+export const CurrentExerciseContainer = styled.div`
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+
+  ${props => props.isActive && `
+    border-color: #89CFF0;
+  `}
+`
+
+const Container = css`
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  justify-content: space-between;
+
+  ${props => props.disabled && `
+    opacity: 0.4;
+    pointer-events: none;
+  `}
+
+  ${props => props.isLocked && `
+    opacity: 0.15;
+    pointer-events: none;
+  `}
+`
+// Excercise
+export const ExerciseContainer = styled.div`
+  ${Container}
+  background-color: #89CFF0;
+`
+
+export const RestContainer = styled.div`
+  ${Container}
+  background-color: lightgray;
+`
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Text = styled.span`
+  font-size: ${(props) => props.fontSize || '16px'};
+  font-weight: ${(props) => props.fontWeight || 'normal'};
+`
+
+export const StyledCheckbox = styled.input`
+  width: 40px;
+  height: 100%;
 `
