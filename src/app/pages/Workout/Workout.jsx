@@ -23,7 +23,7 @@ export default function Workout() {
     <>
       <WeekSpinner>
         <Arrows align='right' onClick={() => handleDayChange(-1)}><FaChevronLeft size={16} /></Arrows>
-        <WeekDay active>{weekdays[day].slice(0, 3)}.</WeekDay>
+        <WeekDay active>{weekdays[day].slice(0, 3)}</WeekDay>
         <Arrows align='left' onClick={() => handleDayChange(1)}><FaChevronRight size={16} /></Arrows>
       </WeekSpinner>
       <div>
