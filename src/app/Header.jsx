@@ -34,6 +34,7 @@ export default function Header() {
     <NavBar>
       <StyledLink to="/" end>Home</StyledLink>
       <StyledLink to="/about">About</StyledLink>
+      <StyledLink to="/workout">Workout</StyledLink>
       <StyledLink to="/chat">Chat</StyledLink>
     </NavBar>
   )
