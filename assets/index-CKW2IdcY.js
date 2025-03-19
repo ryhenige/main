@@ -95,7 +95,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   text-align: center;
   font-weight: bold;
   font-size: 32px;
-  width: 150px;
+  width: 120px;
   background-color: lightgray;
   border-radius: 5px;
 `,D0=Me.div`
