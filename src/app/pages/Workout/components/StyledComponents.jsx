@@ -1,6 +1,19 @@
 import styled, { css } from "styled-components"
 
 // room page
+export const RelativeContainer = styled.div`
+  position: relative; 
+  width: min-content;
+  margin: auto;
+`
+
+export const AbsoluteContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 50%;
+`
+
 export const WeekSpinner = styled.div`
   display: flex;
   justify-content: space-between;
@@ -28,8 +41,8 @@ export const Arrows = styled.div`
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: #89CFF0;
   ${props => props.align === 'right' && `border-radius: 5px 0 0 5px;`}
   ${props => props.align === 'left' && `border-radius: 0 5px 5px 0;`}
